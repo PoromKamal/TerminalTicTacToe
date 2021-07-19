@@ -69,7 +69,7 @@ def main():
     ex = "Y"
     while(ex == 'Y'):
         drawBoard(gameBoard)
-        if winner == "N" and moveCount != 6:
+        if winner == "N" and moveCount != 9:
             print("Player " + player + "'s move! ")
             move = input()
             if(validMove(move)):
@@ -95,7 +95,10 @@ def main():
                 winner = "N"
                 moveCount = 0
                 player = "X"
-        
+def test_branch():
+    print("This is the A.I. Integration Test Branch")
+
+
 if __name__ == "__main__":
      main()
     
