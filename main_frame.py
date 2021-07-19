@@ -30,7 +30,7 @@ def validMove(move):
     if move in validCommands and gameBoard[moveY[move[0]]][moveX[move[1]]] == "-":
         return True
     return False
-
+    
 def checkWinner(board):
     startPiece = board[0][0]
     #Check diagonals
@@ -95,10 +95,6 @@ def main():
                 winner = "N"
                 moveCount = 0
                 player = "X"
-def test_branch():
-    print("This is the A.I. Integration Test Branch")
-
-
 if __name__ == "__main__":
      main()
     
