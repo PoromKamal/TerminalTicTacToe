@@ -57,7 +57,8 @@ def resetBoard(board):
     for i in range(len(board)):
         for j in range(len(board[i])):
             board[i][j] = "-"
-
+def push():
+    return "Test push request"
 def main():
     print("Welcome to terminal only tictactoe! This is a two player game!")
     print("Here is how the commands on board will work:")
@@ -95,9 +96,6 @@ def main():
                 winner = "N"
                 moveCount = 0
                 player = "X"
-def test_branch():
-    print("This is the A.I. Integration Test Branch")
-
 
 if __name__ == "__main__":
      main()
