@@ -30,7 +30,7 @@ def validMove(move):
     if move in validCommands and gameBoard[moveY[move[0]]][moveX[move[1]]] == "-":
         return True
     return False
-    
+
 def checkWinner(board):
     startPiece = board[0][0]
     #Check diagonals
@@ -57,7 +57,8 @@ def resetBoard(board):
     for i in range(len(board)):
         for j in range(len(board[i])):
             board[i][j] = "-"
-
+def push():
+    return "Test push request"
 def main():
     print("Welcome to terminal only tictactoe! This is a two player game!")
     print("Here is how the commands on board will work:")
@@ -95,6 +96,7 @@ def main():
                 winner = "N"
                 moveCount = 0
                 player = "X"
+
 if __name__ == "__main__":
      main()
     
