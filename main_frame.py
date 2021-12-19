@@ -61,7 +61,7 @@ def push():
     return "Test push request"
 def main():
     print("Welcome to terminal only tictactoe! This is a two player game!")
-    print("Here is how the commands on board will work:")
+    print("Enter a coordinate in the format shown below:")
     drawBoard(tutorialBoard)
     print("----------------------------------------------------------------")
     player = "X"
